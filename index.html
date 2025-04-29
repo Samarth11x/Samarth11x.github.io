@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/07a5631a5b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <!-- Floating Icons -->
+            <div class="floating-icons">
+                <img src="/icons/c.svg" class="icon" alt="C">
+                <img src="/icons/cplusplus.svg" class="icon" alt="C++">
+                <img src="/icons/css3.svg" class="icon" alt="CSS">
+                <img src="/icons/git.svg" class="icon" alt="Git">
+                <img src="/icons/github.svg" class="icon" alt="GitHub">
+                <img src="/icons/html5.svg" class="icon" alt="HTML">
+                <img src="/icons/javascript.svg" class="icon" alt="JavaScript">
+                <img src="/icons/lintcode.svg" class="icon" alt="LintCode">
+                <img src="/icons/python.svg" class="icon" alt="Python">
+                <img src="/icons/react.svg" class="icon" alt="React">
+            </div>
+
+            <div class="container_0">
+                <nav>
+                    <h1 id="portfolio">Portfo<span>lio.</span></h1>
+                    <ul id="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio_1">Portfolio</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+
+            <div class="header-text">
+                <p>Developer<span>-in-</span>Training</p>
+                <h1>Hi, I'm <span>Samarth</span> Patil</h1>
+                <p id="header-textp2">AI Enthusiast <span>|</span> Aspiring Software Engineer <span>|</span> Developer</p>
+            </div>
+            <!-- Uncomment the following block if you want to use typing animation -->
+            <!-- 
+            <div class="header-text">
+                <h1 class="typing-text"></h1>
+            </div>
+            -->
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <div id="about">
+            <div class="container_1">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/images/postg 1.jpg" alt="profile">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me :</h1>
+                        <p>
+                            Hi, I'm Samarth Patil, a tech enthusiast and student at GCU, passionate about development and automation. <br>
+                            I'm currently diving deep into programming languages like C, C++, and Python, alongside mastering tools like Git and Windows Terminal. I'm driven by a strong interest in AI automation and Development, and I'm constantly learning new skills to turn ideas into impactful solutions. <br>Let's connect and build something great together!
+
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>C | C++ | Python</span> <br>Basic Programming languages</li>
+                                <li><span>HTML | CSS | JS</span> <br>Front-end</li>
+                                <li><span>Git | Terminal | Arduino</span> <br>Basic operating tools</li>
+                                <li><span>Networking</span><br>Basics of Computer Networking</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <!-- Add experience details here -->
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2011-2022</span> <br>MM's Shri Siddhivinayak English Medium School</li>
+                                <li><span>2022-2024</span> <br>K.L.E's Raja Lakhmagouda PU College of Science</li>
+                                <li><span>2024-2028</span><br>Garden City University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div id="services">
+            <div class="container_2">
+                <h1 class="sub-title">My Services :</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <h2>Networking</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code-branch"></i>
+                        <h2>AI Automation</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolio_1">
+            <div class="container_3">
+                <h1 class="sub-title">My Work :</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/images/work1.png" alt="work1">
+                        <div class="layer">
+                            <h3>Front-end</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/images/work1.png" alt="work1">
+                        <div class="layer">
+                            <h3>Core programming</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/images/work1.png" alt="work1">
+                        <div class="layer">
+                            <h3>Projects</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contacts">
+            <div class="container_4">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me :</h1>
+                        <p><i class="fas fa-paper-plane"></i>samarthpatil3996@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i>09480971996</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/samarth-patil-samarth11x" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Samarth11x" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/Samarth11x" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="text" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div class="container_4">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio_1">Portfolio</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> 2025 Samarth Patil. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Floating icons animation
+        const icons = document.querySelectorAll('.icon');
+        icons.forEach(icon => {
+            const size = 40 + Math.random() * 30;
+            icon.style.width = `${size}px`;
+            icon.style.left = `${Math.random() * 100}vw`;
+            icon.style.top = `${Math.random() * 100}vh`;
+            icon.style.animationDuration = `${10 + Math.random() * 10}s`;
+        });
+
+        // Typing animation
+        const texts = ["Hi, I'm Samarth Patil", "AI Enthusiast", "Developer-in-Training"];
+        let count = 0, index = 0, currentText = '', letter = '';
+
+        function type() {
+            if (count === texts.length) count = 0;
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.querySelector(".typing-text").textContent = letter;
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0;
+                setTimeout(type, 1000);
+            } else {
+                setTimeout(type, 100);
+            }
+        }
+
+        // Uncomment the following line if you want to enable typing animation
+        // type();
+
+        // Tab switching functionality
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Side menu functionality
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
